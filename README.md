@@ -1,1 +1,3 @@
-# Spark_movie_recommender1
+# Spark Movie Recommender
+A movie recommendation system using Apache Spark.
+
