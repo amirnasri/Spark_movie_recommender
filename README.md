@@ -16,8 +16,11 @@ Django files for the web application.
 
 The following is a description of the main scripts in these folders.
 
-### `python/spark.py`
-fdfd
+### `python/spark.py:`
+This script lunch an AWS EC2 cluster, run Apache Spark on each cluster node, and
+execute a driver program on the cluster. It takes several arguments such as the 
+Spark driver program, AWS access key information, and number of cluster nodes to run.
+Here is a description of the input arguments:
 
 ```
 ./spark.py --help
