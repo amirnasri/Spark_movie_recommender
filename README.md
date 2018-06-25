@@ -1,4 +1,4 @@
-# Abount
+# Summary
 This repository hosts a movie recommendation system built using Apache Spark's MLLIB library, 
 Amazon AWS EC2, and Django. 
 In particular, it contains scripts to lunch an AWS EC2 cluster, run Apache Spark on each cluster node, and
@@ -8,7 +8,7 @@ is uploaded by the script to a web application where it is used to recommend mov
 movies input by the user.
 
 
-# Description
+## Description
 Developed a movie recommendation system in Python using Apache Spark’s MLLIB library. Developed a
 
 web application for the recommender using Django. The user can input up to three movies and is recom-
