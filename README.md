@@ -13,3 +13,9 @@ movies input by the user and uses the movie similarity information to recommend 
 The repository contains two main directories `python` and `web`. `python` directory contains scripts for
 launching and preparing the AWS cluster, as well as the Spark driver program. `web` directory contains 
 Django files for the web application.
+
+The following is a description of the main scripts in these folders.
+
+### `python/spark.py`
+fdfd
+
