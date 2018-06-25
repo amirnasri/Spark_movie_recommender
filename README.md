@@ -19,3 +19,53 @@ The following is a description of the main scripts in these folders.
 ### `python/spark.py`
 fdfd
 
+```
+./spark.py --help
+usage: spark.py [-h] [--remote-spark-home REMOTE_SPARK_HOME] [--copy-master]
+                [--copy-dir COPY_DIR] [-u USER] [-i IDENTITY_FILE]
+                [--ec2-access-key EC2_ACCESS_KEY] [-s SLAVES] [-k KEY_PAIR]
+                [-t INSTANCE_TYPE] [-r REGION] [--private-ips] [-a AMI]
+                [--remote-server REMOTE_SERVER] [--run-local]
+                {launch,destroy,start,start-spark,stop-spark} cluster_name
+                python_driver
+
+positional arguments:
+  {launch,destroy,start,start-spark,stop-spark}
+                        Action to perform on the cluster.
+  cluster_name          Name of the ec2 culster.
+  python_driver         Python driver program to run on the master.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --remote-spark-home REMOTE_SPARK_HOME
+                        Directory on the instances where spark is installed
+                        (default: '~/spark/').
+  --copy-master         Whether to copy 'copy-dir' to the master.
+  --copy-dir COPY_DIR   Local directory to be copied to the master (default:
+                        'work').
+  -u USER, --user USER  SSH user to use for logging onto the master (default:
+                        'root').
+  -i IDENTITY_FILE, --identity-file IDENTITY_FILE
+                        SSH private key file to user for logging into
+                        instances (default: 'None').
+  --ec2-access-key EC2_ACCESS_KEY
+                        AWS ec2 access key file (default: 'accessKeys.csv').
+  -s SLAVES, --slaves SLAVES
+                        Number of slaves to launch (default: 1)
+  -k KEY_PAIR, --key-pair KEY_PAIR
+                        Key pair to use on instances (default: '').
+  -t INSTANCE_TYPE, --instance-type INSTANCE_TYPE
+                        Type of instance to launch (default: t2.micro).
+  -r REGION, --region REGION
+                        EC2 region used to launch instances in, or to find
+                        them in (default: us-east-1
+  --private-ips         Use private IPs for instances rather than public if
+                        VPC/subnet requires that.
+  -a AMI, --ami AMI     Amazon Machine Image ID to use (default: ami-
+                        52d5d044).
+  --remote-server REMOTE_SERVER
+                        Remote server address where the results are uploaded
+                        (default: amirnasri.ca).
+  --run-local           run driver program in local machine instead of the
+                        remote server
+```
