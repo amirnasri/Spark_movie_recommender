@@ -8,6 +8,8 @@ provided in the Spark MLLIB library and provides a movie-to-movie similarity mat
 is uploaded by the script to a web application hosted on an HTTP server. The web application receives three
 movies input by the user and uses the movie similarity information to recommend new movies to the user.
 
+## Screenshot
+![alt text](screenshot.png)
 
 ## Description
 The repository contains two main directories `python` and `web`. `python` directory contains scripts for
