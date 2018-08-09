@@ -107,7 +107,7 @@ def recommender(request):
 
     results = []
     for i in range(recom_movie_info.shape[0]):
-        row = recom_movie_info.irow(i)
+        row = recom_movie_info.iloc[i]
         results.append(dict(row))
 
     context['results'] = results

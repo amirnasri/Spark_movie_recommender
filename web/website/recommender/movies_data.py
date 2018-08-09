@@ -226,7 +226,8 @@ def get_poster(imdb_url, title):
 
 def load_df_csv(filename):
     df = pd.read_csv(filename)
-    df.index = df.icol(0)
+    print(df)
+    df.index = df.iloc[:, 0]
     del df[df.columns[0]]
     df.index.name = None
     return df
